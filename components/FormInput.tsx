@@ -13,7 +13,7 @@ export const FormInput = () => {
 
   return (
     <form className="grid text-base w-full gap-5">
-        {fields.map((field: any) => <Input {...field}/>)}
+        {fields.map((field: any) => <Input key={field.placeholder} {...field}/>)}
         <button className="bg-blue text-white py-3 rounded-full">
             Notify Me
         </button>
